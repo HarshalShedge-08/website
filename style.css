@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville", serif;
+}
+
+/* head start here  */
+
+.head {
+    width: 100%;
+    height: auto;
+    background-color: rgb(50, 1, 1);
+    overflow: hidden;
+}
+  
+
+.head .container-fluid a {
+    text-decoration: none;
+    color: white;
+}
+
+.head .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head .left{
+    align-items: flex-end;
+}  
+
+.head .left i{
+padding-left: 10px;
+}
+
+/* main start here  */
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(47, 16, 16, 0.386), rgba(196, 95, 95, 0.402)), url(img/h1_hero.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+/* in main navbar start here  */ 
+
+.navbar {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.navbar-nav li {
+    padding: 15px;
+    position: relative;
+}
+
+.navbar .book a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(250, 146, 134);
+    padding: 18px;
+}   
+
+
+/* navbar line effect start here  */
+
+.navbar-nav li::after {
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar-nav li:hover::after {
+    width: 90%;
+}
+
+/* inside blog start here  */
+
+#myid {
+    background-color: transparent;
+    position: absolute;
+    margin-top: 20px;
+}
+
+#myid a {
+    width: 120px;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    color: whitesmoke;
+    padding: 8px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#myid a:hover {
+    font-size: 16px;
+}
+
+#myid a:last-child {
+    border-bottom: none;
+}
+
+
+/* over background content style start here  */
+
+.title {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 90px;
+}
+
+
+/* check in out and other button start  */
+
+.container-fluid input[type="date"] {
+    font-size: 15px;
+    width: 220px;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.container-fluid input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: white;
+
+}
+
+/* dropdown list start here  */
+
+.dropdown {
+    font-size: 15px;
+}
+
+.dropdown button {
+    width: 158px;
+    /* margin-top: 30px; */
+    word-spacing: 50px;
+}
+
+.dropdown-menu li {
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/* search button */
+
+.search button {
+    width: 158px;
+    /* margin-top: 30px; */
+}
+
+.search a {
+    text-decoration: none;
+}
+
+
+/* first img after back img start 
+
+first img para*/
+
+.para1 {
+    font-family: "Jost", sans-serif;
+    color: rgb(139, 137, 137);
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+.para1-footer a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(216, 151, 163);
+    border: 1px solid rgb(216, 151, 163);
+    padding: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.para1-footer a:hover {
+    color: white;
+    background-color: rgb(239, 132, 150);
+
+}
+
+.para1-footer:hover a:hover {
+    background-color: rgb(226, 154, 166);
+    color: white;
+}
+
+/* section 2 start here 1 container */
+
+.section2 {
+    background: rgba(207, 207, 207, 0.222);
+    margin-top: 100px;
+}
+
+.section2 .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* section 2 start here 2 container */
+
+.section2 .container-fluid .car-box {
+    padding-left: 20px;
+
+    display: flex;
+}
+
+.section2 .container-fluid .car-box img {
+    padding: 20px;
+}
+
+.section2 .carousel-caption a{
+    text-decoration: none;
+    color: white;
+}
+
+/* section 3 start  */
+
+.section3 .row {
+    margin: auto;
+
+}
+
+.section3 .sec3-box1 {
+    margin: auto;
+
+}
+
+.section3 .sec3-head {
+    margin: auto;
+}
+
+.section3 .sec3-title {
+    font-size: 45px;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.section3 .row .title-link {
+    text-align: center;
+    margin: 30px;
+}
+
+.section3 .row .title-link a {
+    color: black;
+    text-decoration: dotted;
+    border-bottom: 2px dotted rgb(18, 18, 18);
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.section3 .sec3-box1-b {
+    background-color: rgb(9, 4, 1);
+    font-size: 45px;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.section3 .sec3-box1-b1 a {
+    text-decoration: none;
+}
+
+.section3 .sec3-box1-b1-para {
+    color: white;
+    font-family: "Jost", sans-serif;
+    padding-top: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section3 .sec3-box1-b1-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(216, 151, 163);
+    border: 1px solid rgb(216, 151, 163);
+    padding: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.section3 .sec3-box1-b1-btn:hover {
+    color: white;
+    background-color: rgb(239, 132, 150);
+}
+
+/* section 4 start video */
+
+.section4 .vid {
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* section 5 start video */
+
+.section5 .section5-title{
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* section 6 start video */
+.section6  {
+    padding-bottom: 50px;
+
+}
+.section6 .row .guest1-img {
+     position: relative;
+}
+ 
+.section6 .row .guest1-title {
+    height: 378px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.341), rgba(0, 0, 0, 0.365));
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.section6 .row .guest1-title .img-title {
+    cursor: pointer;
+}
+ 
+
+.section6 .row .guest1-title #para, #para-2, #para-3 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+
+/* section 7 start here  */
+
+.section7{
+    background-color: rgb(192, 85, 73);
+    letter-spacing: 1px;
+}
+
+.section7 h2, p{
+    font-family:  sans-serif; 
+}
+
+.section7 p{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* footer start here */
+ 
+footer{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+footer  .footer-no{
+    color:  rgb(246, 137, 125);
+}
+
+footer .footer-btn{
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgb(246, 137, 125);
+    border: 1px solid rgb(246, 137, 125);
+}
+
+footer .footer-btn:hover{
+    background: rgb(240, 141, 130);
+}
