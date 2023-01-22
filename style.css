@@ -64,7 +64,11 @@ padding-left: 10px;
     color: white;
     background-color: rgb(250, 146, 134);
     padding: 18px;
-}   
+} 
+
+.navbar .book a:hover{
+    background-color: salmon;
+}
 
 
 /* navbar line effect start here  */
@@ -88,12 +92,11 @@ padding-left: 10px;
 
 #myid {
     background-color: transparent;
-    position: absolute;
-    margin-top: 20px;
+    /* position: relative; */
 }
 
 #myid a {
-    width: 120px;
+    width: 100px;
     font-size: 15px;
     text-decoration: none;
     display: block;
@@ -116,15 +119,14 @@ padding-left: 10px;
 .title {
     text-align: center;
     padding-top: 130px;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
-
 
 /* check in out and other button start  */
 
 .container-fluid input[type="date"] {
     font-size: 15px;
-    width: 220px;
+    width:  100%;
     background: transparent;
     color: white;
     padding: 10px;
@@ -145,9 +147,7 @@ padding-left: 10px;
 }
 
 .dropdown button {
-    width: 158px;
-    /* margin-top: 30px; */
-    word-spacing: 50px;
+    width:  100%;
 }
 
 .dropdown-menu li {
@@ -158,8 +158,7 @@ padding-left: 10px;
 /* search button */
 
 .search button {
-    width: 158px;
-    /* margin-top: 30px; */
+    width:  100%;
 }
 
 .search a {
@@ -240,11 +239,6 @@ first img para*/
 
 }
 
-.section3 .sec3-box1 {
-    margin: auto;
-
-}
-
 .section3 .sec3-head {
     margin: auto;
 }
@@ -270,6 +264,11 @@ first img para*/
     line-height: 26px;
     letter-spacing: 1px;
 }
+
+.section3 .sec3-box1 {
+    margin: auto;
+}
+
 
 .section3 .sec3-box1-b {
     background-color: rgb(9, 4, 1);
@@ -328,7 +327,6 @@ first img para*/
 /* section 6 start video */
 .section6  {
     padding-bottom: 50px;
-
 }
 .section6 .row .guest1-img {
      position: relative;
@@ -336,9 +334,8 @@ first img para*/
  
 .section6 .row .guest1-title {
     height: 378px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.341), rgba(0, 0, 0, 0.365));
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 
@@ -404,3 +401,17 @@ footer .footer-btn{
 footer .footer-btn:hover{
     background: rgb(240, 141, 130);
 }
+
+/* media here  */
+
+@media all and (min-width:300px) and (max-width:850px) {
+    
+    .container-fluid  form .row{
+         visibility: hidden;
+    }
+
+    .section3 .sec3-box1 {
+        flex-direction: column;
+    }
+ 
+ }
